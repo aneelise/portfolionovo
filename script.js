@@ -11,21 +11,30 @@ const projects = [
     // Cada objeto representa um projeto do portfólio
     {
         title: 'Tela de login responsiva',
-        description: 'Este projeto é uma tela de login simples e responsiva, desenvolvida por mim usando HTML, CSS e JavaScript. A interface visual foi criada por mim, incluindo o design e a experiência do usuário. O sistema conta com validação de campos, ícones interativos, modo claro e escuro, além de uma tela de cadastro. É uma base sólida para estudos de Front-End, com foco na manipulação do DOM e aplicação de boas práticas visuais.',
+        description: 'Projeto de interface de autenticação com foco em responsividade, experiência do usuário e boas práticas de desenvolvimento front-end. Desenvolvido com HTML, CSS e JavaScript puro, conta com funcionalidades como validação de campos, alternância entre modos claro e escuro, ícones interativos e uma tela de cadastro adicional. Toda a estrutura visual e lógica de interação foi criada por mim, servindo como base sólida para estudos de manipulação do DOM e construção de interfaces modernas e acessíveis.',
         tech: ['HTML', 'CSS', 'JavaScript', 'Responsivo'],
         image: 'telalogin.png',
-        github: '#',
+        github: 'https://github.com/aneelise/Primeiro-Commit',
         demo: 'https://pagina-login-ane.netlify.app/',
         gradient: 'Gradiente de fundo do card'
     },
 
         {
         title: 'Site de Receitas Saudáveis',
-        description: 'Este projeto é um site de receitas saudáveis idealizado por mim ao perceber o interesse do meu nutricionista nas minhas preparações. Como ele gosta das minhas receitas e queria compartilhá-las com os pacientes, desenvolvi esta solução prática para facilitar esse processo. Todas as receitas e imagens foram criadas por mim, tornando este um projeto totalmente pessoal.',
+        description: 'Este projeto é uma aplicação web desenvolvida para centralizar e compartilhar receitas saudáveis de forma prática e visualmente atrativa. A ideia surgiu a partir da demanda real de um nutricionista interessado em divulgar preparações saudáveis aos seus pacientes. Todas as receitas e imagens foram produzidas por mim, tornando o projeto 100% autoral. A aplicação foi construída com foco em usabilidade, organização por categorias, e estrutura modular, servindo como um case completo de front-end com integração de lógica em JavaScript e aplicação de boas práticas de desenvolvimento web.',
         tech: ['HTML', 'CSS', 'JavaScript', 'Responsivo'],
         image: 'telareceita.png',
-        github: '#',
+        github: 'https://github.com/aneelise/receitas',
         demo: 'https://receitasaudaveis.netlify.app/',
+        gradient: 'Gradiente de fundo do card'
+    },
+     {
+        title: 'Plataforma de Vendas de Consultoria Online ',
+        description: 'Aplicação desenvolvida voltada para um treinador que deseja vender sua consultoria online e eBooks de treinamento de forma prática e profissional. O site também apresenta a trajetória do treinador, sua metodologia, depoimentos e resultados das alunas, fortalecendo sua autoridade e conexão com o público. A plataforma foi pensada para ser responsiva, visualmente atrativa e fácil de navegar, otimizando a experiência do usuário e potencializando as vendas.',
+        tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
+        image: 'telarapha.png',
+        github: 'https://github.com/aneelise/portfoliorapha',
+        demo: 'https://raphaelviezorkosky.netlify.app/',
         gradient: 'Gradiente de fundo do card'
     },
     // ... Outros projetos omitidos por brevidade
@@ -82,19 +91,23 @@ window.addEventListener('scroll', () => {
 
 // ======== Envio do Formulário de Contato ========
 contactForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Impede o envio padrão
-    
-    const formData = new FormData(contactForm);
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        message: formData.get('message')
-    };
+    e.preventDefault();
 
-    console.log('Formulário enviado:', data);
-    alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-    contactForm.reset(); // Limpa o formulário
+    const formData = new FormData(contactForm);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    const phoneNumber = '5543998231510'; // coloque seu número com DDI (ex: +55 para Brasil)
+    const text = `Olá! Meu nome é ${name}, meu email é ${email}.\nMensagem: ${message}`;
+    const encodedText = encodeURIComponent(text);
+    
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+    window.open(whatsappURL, '_blank');
+
+    contactForm.reset();
 });
+
 
 // ======== Geração dinâmica dos projetos ========
 function generateProjects() {
@@ -106,7 +119,7 @@ function generateProjects() {
         projectCard.innerHTML = `
             <div class="project-image" style="background-image: url('${project.image}')">
                 <div class="project-overlay">
-                    <a href="${project.github}" class="project-link" title="Ver código">🐱</a>
+                    <a href="${project.github}" class="project-link" title="Ver código"target="_blank" rel="noopener noreferrer">🐱</a>
                     <a href="${project.demo}" class="project-link" title="Ver demo" target="_blank" rel="noopener noreferrer">🔗</a>
                 </div>
             </div>
