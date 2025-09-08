@@ -661,6 +661,11 @@ section {
     overflow: hidden;
     transition: var(--transition);
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* deixa os cards do mesmo tamanho no grid */
+    
  
 }
 
@@ -709,7 +714,10 @@ section {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1rem;
+    flex: 1; /* ocupa todo espaço disponível acima do botão */
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
@@ -748,10 +756,8 @@ section {
     text-align: center;
 }
 .project-buttons {
-    position: absolute;
-    bottom: 15px; /* distância do fundo do card */
-    left: 20px;
-    right: 20px;
+   margin-top: auto; /* força o botão pro final */
+    padding: 1rem;    /* opcional, só pra dar espaçamento */
 }
 
 /* botao do projeto no card */

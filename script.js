@@ -39,11 +39,11 @@ const projects = [
     },
     {
         title: 'Portal de Venda – Ebook Nutritivo',
-        description: '',
+        description: 'Este projeto foi desenvolvido como uma landing page estratégica para a venda de um eBook de receitas saudáveis. O foco está em design atrativo, com responsividade e persuasão, utilizando elementos de marketing digital para gerar conversões. A página conta com seções bem estruturadas (apresentação do produto, benefícios, conteúdo do eBook, chamada para ação e depoimentos), além de botões de compra integrados.',
         tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
-        image: 'telarapha.png',
-        github: 'https://github.com/aneelise/portfoliorapha',
-        demo: 'https://raphaelviezorkosky.netlify.app/',
+        image: 'ebook.png',
+        github: 'https://github.com/aneelise/ebook',
+        demo: 'https://ebookreceita.netlify.app/',
         gradient: 'Gradiente de fundo do card'
     },
     {
