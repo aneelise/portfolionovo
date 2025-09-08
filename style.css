@@ -747,6 +747,27 @@ section {
 .projects-footer {
     text-align: center;
 }
+.project-buttons {
+    position: absolute;
+    bottom: 15px; /* distância do fundo do card */
+    left: 20px;
+    right: 20px;
+}
+
+/* botao do projeto no card */
+
+.project-buttons .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-buttons .btn:hover {
+    transform: translateY(-2px) scale(1.02);
+}
 
 /* Contact Section */
 .contact {

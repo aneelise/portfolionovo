@@ -37,6 +37,33 @@ const projects = [
         demo: 'https://raphaelviezorkosky.netlify.app/',
         gradient: 'Gradiente de fundo do card'
     },
+    {
+        title: 'Portal de Venda – Ebook Nutritivo',
+        description: '',
+        tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
+        image: 'telarapha.png',
+        github: 'https://github.com/aneelise/portfoliorapha',
+        demo: 'https://raphaelviezorkosky.netlify.app/',
+        gradient: 'Gradiente de fundo do card'
+    },
+    {
+        title: 'Tracker de Musculação ',
+        description: '',
+        tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
+        image: 'telarapha.png',
+        github: 'https://github.com/aneelise/portfoliorapha',
+        demo: 'https://raphaelviezorkosky.netlify.app/',
+        gradient: 'Gradiente de fundo do card'
+    },
+    {
+        title: 'Gestão de Gastos e Orçamento ',
+        description: '',
+        tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
+        image: 'telarapha.png',
+        github: 'https://github.com/aneelise/portfoliorapha',
+        demo: 'https://raphaelviezorkosky.netlify.app/',
+        gradient: 'Gradiente de fundo do card'
+    },
     // ... Outros projetos omitidos por brevidade
 ];
 
@@ -132,6 +159,10 @@ function generateProjects() {
                 <div class="project-tech">
                     ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
+                <div class="project-buttons">
+            <a href="${project.demo}" target="_blank" class="btn btn-primary btn-full">Ver Projeto</a>
+        </div>
+    </div>
             </div>
         `;
 
