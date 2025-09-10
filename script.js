@@ -46,24 +46,24 @@ const projects = [
         demo: 'https://ebookreceita.netlify.app/',
         gradient: 'Gradiente de fundo do card'
     },
-    {
-        title: 'Tracker de Musculação ',
-        description: '',
-        tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
-        image: 'telarapha.png',
-        github: 'https://github.com/aneelise/portfoliorapha',
-        demo: 'https://raphaelviezorkosky.netlify.app/',
-        gradient: 'Gradiente de fundo do card'
-    },
-    {
-        title: 'Gestão de Gastos e Orçamento ',
-        description: '',
-        tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
-        image: 'telarapha.png',
-        github: 'https://github.com/aneelise/portfoliorapha',
-        demo: 'https://raphaelviezorkosky.netlify.app/',
-        gradient: 'Gradiente de fundo do card'
-    },
+   // {
+    //    title: 'Tracker de Musculação ',
+     //   description: '',
+     //   tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
+    //    image: 'telarapha.png',
+      //  github: 'https://github.com/aneelise/portfoliorapha',
+      //  demo: 'https://raphaelviezorkosky.netlify.app/',
+      //  gradient: 'Gradiente de fundo do card'
+   //},
+   // {
+    //    title: 'Gestão de Gastos e Orçamento ',
+    //    description: '',
+    //    tech: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML(JSX)', 'Responsivo'],
+     //   image: 'telarapha.png',
+    //    github: 'https://github.com/aneelise/portfoliorapha',
+     //   demo: 'https://raphaelviezorkosky.netlify.app/',
+     //   gradient: 'Gradiente de fundo do card'
+   // },
     // ... Outros projetos omitidos por brevidade
 ];
 
